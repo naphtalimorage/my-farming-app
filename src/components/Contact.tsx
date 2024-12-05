@@ -1,4 +1,3 @@
-import { Textarea } from "@material-tailwind/react";
 import { MapPin } from "lucide-react";
 import { Phone } from "lucide-react";
 import { Mail } from "lucide-react";

@@ -1,5 +1,4 @@
 import Nappier from "../assets/image5.jpeg";
-import NappierImage from "../assets/about2.jpg";
 import Vision from "./Vision";
 import Desmodium from "../assets/Des.jpg";
 import AboutTestmonials from "./AboutTestmonials";
