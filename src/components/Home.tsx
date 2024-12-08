@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import CarouselPage from "./Carousel";
-import about1 from "../assets/about1.jpg";
-import about3 from "../assets/about3.jpg";
+import about1 from "../assets/download.jpeg";
+import about3 from "../assets/download1.jpeg";
 import { Button } from "./ui/button";
 import Testmonial from "./Testmonial";
 
@@ -54,43 +54,67 @@ const Home = () => {
         </div>
         <div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
-            <img
-              src={about1}
-              alt=""
-              className="w-[350px] h-[150px] object-cover"
-            />
-            <img
-              src={about1}
-              alt=""
-              className="w-[350px] h-[150px] object-cover"
-            />
-            <img
-              src={about1}
-              alt=""
-              className="w-[350px] h-[150px] object-cover"
-            />
-            <img
-              src={about1}
-              alt=""
-              className="w-[350px] h-[150px] object-cover"
-            />
-            <img
-              src={about1}
-              alt=""
-              className="w-[350px] h-[150px] object-cover"
-            />
-            <img
-              src={about1}
-              alt=""
-              className="w-[350px] h-[150px] object-cover"
-            />
+            <div
+              className="relative h-[150px] w-[250px] bg-cover bg-center "
+              style={{ backgroundImage: `url(${about1})` }}
+            >
+              <div className="absolute inset-0  bg-gradient-to-t from-black to-transparent via-black via-5% opacity-90"></div>
+              <div className="relative z-10 ">
+                <h1 className="text-red-600 text-xl  absolute top-28 left-6">DESMODIUM</h1>
+              </div>
+            </div>
+            <div
+              className="relative h-[150px] w-[250px] bg-cover bg-center "
+              style={{ backgroundImage: `url(${about3})` }}
+            >
+              <div className="absolute inset-0  bg-gradient-to-t from-black to-transparent via-black via-5% opacity-90"></div>
+              <div className="relative z-10 ">
+                <h1 className="text-red-600 text-xl  absolute top-28 left-6">DESMODIUM</h1>
+              </div>
+            </div>
+            <div
+              className="relative h-[150px] w-[250px] bg-cover bg-center "
+              style={{ backgroundImage: `url(${about1})` }}
+            >
+              <div className="absolute inset-0  bg-gradient-to-t from-black to-transparent via-black via-5% opacity-90"></div>
+              <div className="relative z-10 ">
+                <h1 className="text-red-600 text-xl  absolute top-28 left-6">DESMODIUM</h1>
+              </div>
+            </div>
+            <div
+              className="relative h-[150px] w-[250px] bg-cover bg-center "
+              style={{ backgroundImage: `url(${about3})` }}
+            >
+              <div className="absolute inset-0  bg-gradient-to-t from-black to-transparent via-black via-5% opacity-90"></div>
+              <div className="relative z-10 ">
+                <h1 className="text-red-600 text-xl  absolute top-28 left-6">DESMODIUM</h1>
+              </div>
+            </div>
+            <div
+              className="relative h-[150px] w-[250px] bg-cover bg-center "
+              style={{ backgroundImage: `url(${about1})` }}
+            >
+              <div className="absolute inset-0  bg-gradient-to-t from-black to-transparent via-black via-5% opacity-90"></div>
+              <div className="relative z-10 ">
+                <h1 className="text-red-600 text-xl  absolute top-28 left-6">DESMODIUM</h1>
+              </div>
+            </div>
+            <div
+              className="relative h-[150px] w-[250px] bg-cover bg-center "
+              style={{ backgroundImage: `url(${about3})` }}
+            >
+              <div className="absolute inset-0  bg-gradient-to-t from-black to-transparent via-black via-5% opacity-90"></div>
+              <div className="relative z-10 ">
+                <h1 className="text-red-600 text-xl  absolute top-28 left-6">DESMODIUM</h1>
+              </div>
+            </div>
+            
           </div>
         </div>
       </div>
       <div>
-        <Testmonial/>
+        <Testmonial />
       </div>
-  
     </>
   );
 };

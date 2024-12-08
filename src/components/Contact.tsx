@@ -4,21 +4,41 @@ import { Mail } from "lucide-react";
 import { Clock } from "lucide-react";
 import { Link } from "react-router-dom";
 import { Button } from "./ui/button";
-import Desmodium from "../assets/Des.jpg";
+import Man from "../assets/Man.jpeg";
 const Contact = () => {
   return (
     <>
-      <div>
-        <img
-          src={Desmodium}
-          alt="desmodium"
-          className="w-full h-96 object-cover"
-        />
+      <div
+        className="relative w-full h-[460px] bg-cover bg-center  "
+        style={{ backgroundImage: `url(${Man})` }}
+      >
+        <div className="absolute inset-0 bg-black opacity-50"></div>
+        <div className="relative z-10 text-white ">
+          <div className=" border-l-8 border-white absolute top-[275px] left-24 h-32 ">  
+          </div>
+          <div className="relative flex flex-row justify-between">
+            <div>
+              <h1 className="text-5xl absolute top-72 left-28">Contact-Us</h1>
+            </div>
+            <div className="absolute top-[310px] right-10">
+              <p className="w-400px">
+                Experience the ultimate customer care at TopFarm,
+                <br /> where flexibility meets dedication.
+              </p>
+              <div className="flex flex-row mt-5">
+                <Link to="/" className="text-base text-gray-400 hover:text-gray-200">
+                  Home
+                </Link>
+                <div className="h-4 mt-1 border-l-2 border-gray-400 mx-2"></div>
+                <h1 className=" text-gray-300">Contact Us</h1>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div className="flex lg:flex-row sm:flex-col justify-between px-20 mb-10">
         <div className="w-[500px]">
-          <h1 className="text-6xl mt-10">Contact Us</h1>
-          <p className="mt-8">
+          <p className="mt-9">
             We’d be delighted to host you at our office for a conversation. We
             look forward to welcoming you
           </p>
@@ -64,7 +84,7 @@ const Contact = () => {
             </p>
           </div>
         </div>
-        <div className="w-[500px] mt-16">
+        <div className="w-[500px] mt-9">
           <form className="flex flex-col gap-4">
             <p>
               If you’d prefer not to use our contact form, feel free to send us
@@ -81,7 +101,9 @@ const Contact = () => {
               placeholder="Enter your name"
               className="border w-full py-2 rounded-sm px-2 "
             />
-            <label htmlFor="email" className="m-0">E-mail</label>
+            <label htmlFor="email" className="m-0">
+              E-mail
+            </label>
             <input
               id="email"
               name="email"

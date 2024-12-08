@@ -12,8 +12,8 @@ function App() {
           <Navigation />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
+            <Route path="/about-us/" element={<About />} />
+            <Route path="/contact/" element={<Contact />} />
           </Routes>
           <FooterWithSocialLinks/>
         </div>

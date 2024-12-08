@@ -20,9 +20,8 @@ const Details = [
 const AboutTestmonials = () => {
   return (
     <>
-      <div className="bg-gray-500 h-[700px]">
-        <h1>hhh</h1>
-        <h1 className="flex justify-center mt-10  text-4xl text-black ">
+      <div className="bg-gray-500 h-[700px] py-10">
+        <h1 className="flex justify-center   text-4xl text-black ">
           Testmonials
         </h1>
         <p className="flex justify-center mt-5 text-lg text-black">

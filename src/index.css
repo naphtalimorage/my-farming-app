@@ -3,6 +3,19 @@
 @tailwind utilities;
 
 /* ... */
+@keyframes slideIn {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.slide-in {
+  animation: slideIn 2s ease-in-out;
+}
+
 
 @layer base {
   :root {

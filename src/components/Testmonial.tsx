@@ -66,7 +66,7 @@ const Testmonial = () => {
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-5 px-16 mt-10">
           {cardDetails &&
             cardDetails.map((details) => (
-              <div key={details.name} className="border w-72 px-8 relative">
+              <div key={details.name} className=" w-72 px-8 relative">
                 <div className="w-14 h-14 bg-red-600 rounded-full flex items-center justify-center absolute top-36 right-16 ">
                     <Quote size={20} color="white" />
                 </div>
