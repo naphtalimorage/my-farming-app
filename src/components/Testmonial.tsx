@@ -1,7 +1,7 @@
-import Nappier from "../assets/about1.jpg";
-import Lucerne from "../assets/Lucerne.jpg";
-import Hay from "../assets/image30.jpeg";
-import Desmodium from "../assets/image10.jpeg";
+import Nappier from "../assets/download1.jpeg";
+import Lucerne from "../assets/download.jpeg";
+import Hay from "../assets/download1.jpeg";
+import Desmodium from "../assets/download.jpeg";
 import { Quote } from "lucide-react";
 
 const cardDetails = [
