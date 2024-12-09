@@ -3,10 +3,6 @@ import {
   CarouselContent,
   CarouselItem,
 } from "@/components/ui/carousel";
-import image11 from "../assets/image11.jpeg";
-import image10 from "../assets/image10.jpeg";
-import image20 from "../assets/image20.jpeg";
-import image1 from "../assets/image1.jpeg";
 import Vegetables from "../assets/download1.jpeg";
 import Autoplay from "embla-carousel-autoplay";
 import { Link } from "react-router-dom";
