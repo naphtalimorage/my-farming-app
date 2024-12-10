@@ -8,16 +8,16 @@ const About = () => {
   return (
     <>
       <div
-        className="relative w-full h-96 bg-cover bg-center bg-fixed "
+        className="relative w-full h-[460px] bg-cover bg-center bg-fixed "
         style={{ backgroundImage: `url(${Desmodium})` }}
       >
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="relative z-10  text-white text-center ">
-          <div className="flex flex-row px-24 py-44">
+          <div className="flex flex-row px-24 py-64">
             <div className="h-32 border-l-8 border-white"></div>
             <h1 className="text-5xl mx-4 mt-3">Overview</h1>
           </div>
-          <div className="flex felx-row absolute bottom-40 right-10">
+          <div className="flex felx-row absolute bottom-64 right-10">
             <Link
               to="/"
               className="text-base text-gray-400 hover:text-gray-200"
@@ -30,7 +30,7 @@ const About = () => {
         </div>
       </div>
       <div className="flex flex-row justify-between bg-green-800 h-[700px]">
-        <div className="ml-20 mt-20">
+        <div className="ml-20 mt-10">
           <h1 className="text-2xl font-bold font-sans text-white">Who we are</h1>
           <p className="text-white w-[600px] text-lg mt-8">
             TopFarm aims to be the leader in promoting sustainable farming in
