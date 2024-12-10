@@ -11,7 +11,7 @@ const Home = () => {
       <div className="h-[400px]">
         <CarouselPage />
       </div>
-      <div className="flex flex-row gap-20 mt-10 ">
+      <div className="flex flex-row gap-20 mt-24 ">
         <div>
           <img src={about3} alt="" className="w-[600px] h-80 object-cover" />
         </div>
