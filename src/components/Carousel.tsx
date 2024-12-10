@@ -22,12 +22,12 @@ const CarouselPage = () => {
           <CarouselContent>
             <CarouselItem>
               <div
-                className="relative h-[400px] w-full bg-cover bg-center "
+                className="relative h-[460px] w-full bg-cover bg-center "
                 style={{ backgroundImage: `url(${Vegetables})` }}
               >
                 <div className="absolute inset-0 bg-black opacity-50"></div>
                 <div className="relative z-10 flex justify-between">
-                  <h1 className="text-5xl font-serif text-white px-32 py-48 slide-in">
+                  <h1 className="text-5xl font-serif text-white px-32 py-64 slide-in">
                     Cultivating Every Seed to <br />
                     Flourish and Reap Bountiful <br />
                     Rewards
