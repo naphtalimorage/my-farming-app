@@ -4,6 +4,8 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import Navigation from "./components/Navigation";
 import FooterWithSocialLinks from "./components/Footer";
+
+
 function App() {
   return (
     <>
@@ -12,8 +14,8 @@ function App() {
           <Navigation />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/about-us/" element={<About />} />
-            <Route path="/contact/" element={<Contact />} />
+            <Route path="/about-us" element={<About/>} />
+            <Route path="/contact" element={<Contact/>} />
           </Routes>
           <FooterWithSocialLinks/>
         </div>
