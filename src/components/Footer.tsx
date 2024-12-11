@@ -29,25 +29,25 @@ const currentYear = new Date().getFullYear();
 export default function FooterWithSocialLinks() {
   return (
     <footer
-      className="relative w-full h-[310px] bg-cover bg-center bg-fixed"
+      className="relative w-full max-h-fit bg-cover bg-center bg-fixed"
       style={{ backgroundImage: `url(${Vagetables})` }}
     >
       <div className="absolute inset-0 bg-green-900 opacity-80"></div>
       <div className="relative z-10 ">
-        <div className="mx-auto w-full max-w-7xl px-8 ">
+        <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8 ">
           <div className="grid grid-cols-1 justify-between gap-4 md:grid-cols-2">
             <div>
-              <div className="flex flex-row w-[180px] bg-white mt-8">
+              <div className="flex flex-row max-w-[180px] bg-white mt-2 sm:mt-6 lg:mt-8">
                 <img src={Logo} alt="" className="w-16 object-cover" />
                 <div className="flex flex-col  ">
-                  <h1 className="text-[25px] font-semibold text-green-700">TopFarm</h1>
+                  <h1 className="text-[16px]  lg:text-[25px] font-semibold text-green-700">TopFarm</h1>
                   <p className="flex justify-center text-xs text-green-700">Seed Company</p>
                 </div>
               </div>
-              <div className="mt-8">
-                <h1 className="text-white text-xl  mt-2">Find us on:</h1>
-                <div className="flex gap-4 text-white mt-2">
-                  <div className="border rounded-full w-12 h-12 flex items-center justify-center hover:text-black hover:bg-white">
+              <div className="mt-2 sm:mt-6 lg:mt-8">
+                <h1 className="text-white text-xl mt-2 lg:mt-2">Find us on:</h1>
+                <div className="flex gap-4 text-white mt-2 lg:mt-2">
+                  <div className="border rounded-full w-10 h-10 sm:w-11 sm:h-11 lg:w-12 lg:h-12 flex items-center justify-center hover:text-black hover:bg-white">
                     <Link to="#" className="opacity-80 transition-opacity  ">
                       <svg
                         className="h-8 w-8"
@@ -64,7 +64,7 @@ export default function FooterWithSocialLinks() {
                     </Link>
                   </div>
 
-                  <div className="border rounded-full w-12 h-12 flex items-center justify-center  hover:text-black hover:bg-white">
+                  <div className="border rounded-full w-10 h-10 sm:w-11 sm:h-11 lg:w-12 lg:h-12 flex items-center justify-center  hover:text-black hover:bg-white">
                     <Link
                       to="#"
                       className="opacity-80 transition-opacity hover:opacity-100 "
@@ -83,7 +83,7 @@ export default function FooterWithSocialLinks() {
                       </svg>
                     </Link>
                   </div>
-                  <div className="border rounded-full w-12 h-12 flex items-center justify-center  hover:text-black hover:bg-white">
+                  <div className="border rounded-full w-10 h-10 sm:w-11 sm:h-11 lg:w-12 lg:h-12 flex items-center justify-center  hover:text-black hover:bg-white">
                     <Link
                       to="#"
                       className="opacity-80 transition-opacity hover:opacity-100"
@@ -98,7 +98,7 @@ export default function FooterWithSocialLinks() {
                       </svg>
                     </Link>
                   </div>
-                  <div className="border rounded-full w-12 h-12 flex items-center justify-center  hover:text-black hover:bg-white">
+                  <div className="border rounded-full w-10 h-10 sm:w-11 sm:h-11 lg:w-12 lg:h-12 flex items-center justify-center  hover:text-black hover:bg-white">
                     <Link
                       to="#"
                       className="opacity-80 transition-opacity hover:opacity-100"
@@ -120,17 +120,17 @@ export default function FooterWithSocialLinks() {
                 </div>
               </div>
             </div>
-            <div className="grid grid-cols-3 justify-between gap-4">
+            <div className="grid grid-cols-1 lg:grid-cols-3 justify-between gap-2 lg:gap-4 ">
               {LINKS.map(({ title, items }) => (
                 <ul key={title}>
-                  <h1 className="mt-4 text-lg font-medium  text-white">
+                  <h1 className="mt-2 lg:mt-4 text-base lg:text-lg font-medium  text-white ">
                     {title}
                   </h1>
                   {items.map((link) => (
                     <li key={link}>
                       <h1
                         color="white"
-                        className="py-1.5 font-normal transition-colors text-white hover:underline"
+                        className="lg:py-1.5  text-sm lg:text-base font-normal transition-colors text-white hover:underline"
                       >
                         {link}
                       </h1>
@@ -140,8 +140,8 @@ export default function FooterWithSocialLinks() {
               ))}
             </div>
           </div>
-          <div className=" flex w-full flex-col items-center justify-center border-t border-blue-gray-50 py-4 md:flex-row md:justify-between">
-            <div className="mb-4 text-base text-center font-normal text-white md:mb-0">
+          <div className=" flex w-full flex-col mt-2 lg:mt-4 items-center justify-center border-t border-blue-gray-50 py-4 md:flex-row md:justify-between">
+            <div className="mb-4 text-sm lg:text-base text-center font-normal text-white md:mb-0">
               &copy; {currentYear}{" "}
               <a href="https://material-tailwind.com/">TopFarm </a>. All Rights
               Reserved.

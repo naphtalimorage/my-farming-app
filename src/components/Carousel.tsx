@@ -22,17 +22,17 @@ const CarouselPage = () => {
           <CarouselContent>
             <CarouselItem>
               <div
-                className="relative h-[460px] w-full bg-cover bg-center "
+                className="relative h-[280px] lg:h-[460px] w-full bg-cover bg-center "
                 style={{ backgroundImage: `url(${Vegetables})` }}
               >
                 <div className="absolute inset-0 bg-black opacity-50"></div>
                 <div className="relative z-10 flex justify-between">
-                  <h1 className="text-5xl font-serif text-white px-32 py-64 slide-in">
+                  <h1 className="text-base lg:text-5xl font-serif text-white px-10 py-44 lg:px-32 lg:py-64 slide-in">
                     Cultivating Every Seed to <br />
                     Flourish and Reap Bountiful <br />
                     Rewards
                   </h1>
-                  <div className="flex flex-col gap-1 text-white absolute right-16 top-28">
+                  <div className="hidden  lg:flex lg:flex-col lg:gap-1 text-white absolute right-12 top-20 lg:right-16 lg:top-40  ">
                     <div className="border rounded-full w-10 h-10 flex items-center justify-center hover:text-black hover:bg-white">
                       <Link to="#" className="opacity-80 transition-opacity  ">
                         <svg

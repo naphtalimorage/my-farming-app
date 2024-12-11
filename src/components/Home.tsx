@@ -8,16 +8,16 @@ import Testmonial from "./Testmonial";
 const Home = () => {
   return (
     <>
-      <div className="h-[400px]">
+      <div className="h-[280px] max-h-[400px]">
         <CarouselPage />
       </div>
-      <div className="flex flex-row gap-20 mt-24 ">
+      <div className="flex flex-col gap-10 mt-4 lg:flex-row lg:gap-20 lg:mt-24 px-4 lg:px-0">
         <div>
-          <img src={about3} alt="" className="w-[600px] h-80 object-cover" />
+          <img src={about3} alt="" className="lg:w-[600px] lg:h-80 object-cover" />
         </div>
-        <div className="w-[700px]">
-          <h2 className="text-4xl mt-4">About TopFarm</h2>
-          <p className="mt-6 text-base w-[620px]">
+        <div className="lg:w-[700px]">
+          <h2 className="text-2xl mt-0 lg:text-4xl lg:mt-4">About TopFarm</h2>
+          <p className="lg:mt-6 lg:text-base max-w-[620px]">
             TopFarm Is a brand name of Kenya Highland Seed Company Limited
             (KHSCL) which aims to be the leader in promoting sustainable farming
             in Africa. To enable us realize this vision we have established a
@@ -28,16 +28,16 @@ const Home = () => {
             continue farming.
           </p>
           <Link to="/about">
-            <Button className="mt-12 px-10 py-6 bg-red-600 hover:bg-red-500 hover:underline text-base">
+            <Button className="mt-4 lg:mt-12 lg:px-10 lg:py-6 bg-red-600 hover:bg-red-500 hover:underline lg:text-base">
               Learn More
             </Button>
           </Link>
         </div>
       </div>
-      <div className="flex  flex-row px-16 mt-10 gap-10 ">
+      <div className="flex flex-col lg:flex-row lg:px-16 mt-6 lg:mt-10 gap-5 lg:gap-10 px-4  ">
         <div>
-          <h2 className="font-bold text-4xl">OUR PRODUCTS</h2>
-          <p className="w-96">
+          <h2 className="font-bold text-2xl lg:text-4xl">OUR PRODUCTS</h2>
+          <p className="max-w-96">
             At TopFarm, we take pride in offering a diverse range of
             high-quality seeds designed to meet the needs of modern farmers. Our
             flagship products include top-performing varieties that are the
@@ -47,15 +47,15 @@ const Home = () => {
             drive agricultural success.
           </p>
           <Link to="/contact">
-            <Button className="mt-10 px-10 py-6 bg-red-600 hover:bg-red-500 hover:underline text-base">
+            <Button className="mt-4 lg:mt-10 lg:px-10 lg:py-6 bg-red-600 hover:bg-red-500 hover:underline text-base">
               Our Seeds
             </Button>
           </Link>
         </div>
         <div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 lg:gap-8">
             <div
-              className="relative h-[150px] w-[250px] bg-cover bg-center "
+              className="relative h-40 w-full lg:h-[150px] lg:w-[250px] bg-cover bg-center "
               style={{ backgroundImage: `url(${about1})` }}
             >
               <div className="absolute inset-0  bg-gradient-to-t from-black to-transparent via-black via-5% opacity-90"></div>
@@ -64,7 +64,7 @@ const Home = () => {
               </div>
             </div>
             <div
-              className="relative h-[150px] w-[250px] bg-cover bg-center "
+              className="relative h-40 w-full lg:h-[150px] lg:w-[250px] bg-cover bg-center "
               style={{ backgroundImage: `url(${about3})` }}
             >
               <div className="absolute inset-0  bg-gradient-to-t from-black to-transparent via-black via-5% opacity-90"></div>
@@ -73,7 +73,7 @@ const Home = () => {
               </div>
             </div>
             <div
-              className="relative h-[150px] w-[250px] bg-cover bg-center "
+              className="relative h-40 w-full lg:h-[150px] lg:w-[250px] bg-cover bg-center "
               style={{ backgroundImage: `url(${about1})` }}
             >
               <div className="absolute inset-0  bg-gradient-to-t from-black to-transparent via-black via-5% opacity-90"></div>
@@ -82,7 +82,7 @@ const Home = () => {
               </div>
             </div>
             <div
-              className="relative h-[150px] w-[250px] bg-cover bg-center "
+              className="relative h-40 w-full lg:h-[150px] lg:w-[250px] bg-cover bg-center "
               style={{ backgroundImage: `url(${about3})` }}
             >
               <div className="absolute inset-0  bg-gradient-to-t from-black to-transparent via-black via-5% opacity-90"></div>
@@ -91,7 +91,7 @@ const Home = () => {
               </div>
             </div>
             <div
-              className="relative h-[150px] w-[250px] bg-cover bg-center "
+              className="relative h-40 w-full lg:h-[150px] lg:w-[250px] bg-cover bg-center "
               style={{ backgroundImage: `url(${about1})` }}
             >
               <div className="absolute inset-0  bg-gradient-to-t from-black to-transparent via-black via-5% opacity-90"></div>
@@ -100,7 +100,7 @@ const Home = () => {
               </div>
             </div>
             <div
-              className="relative h-[150px] w-[250px] bg-cover bg-center "
+              className="relative h-40 w-full lg:h-[150px] lg:w-[250px] bg-cover bg-center "
               style={{ backgroundImage: `url(${about3})` }}
             >
               <div className="absolute inset-0  bg-gradient-to-t from-black to-transparent via-black via-5% opacity-90"></div>

@@ -54,12 +54,12 @@ const Navigation = () => {
         <div className="mx-auto px-2 sm:px-6 lg:px-8 py-1 sm:py-1 lg:py-2 ">
           <div className="relative flex items-center justify-between h-16">
             <div className="flex flex-row max-w-[180px] bg-white ">
-              <img src={Logo} alt="" className="w-16 object-cover" />
+              <img src={Logo} alt="" className="w-10 lg:w-16 object-cover" />
               <div className="flex flex-col  ">
-                <h1 className="text-[25px] font-semibold text-green-700">
+                <h1 className="text-18 lg:text-[25px] font-semibold text-green-700">
                   TopFarm
                 </h1>
-                <p className="flex justify-center text-xs text-green-700">
+                <p className="flex justify-center text-[10px] lg:text-xs text-green-700">
                   Seed Company
                 </p>
               </div>
