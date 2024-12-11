@@ -84,7 +84,7 @@ const Navigation = () => {
 
       {openNav && (
         <div className="fixed inset-0 bg-black bg-opacity-75 z-50 ">
-          <div className="bg-white p-3 shadow-lg ml-24">
+          <div className="bg-white p-3 shadow-lg ml-40 h-screen">
             <button
               onClick={Toggle}
               className="text-gray-800 absolute top-4 right-4"
