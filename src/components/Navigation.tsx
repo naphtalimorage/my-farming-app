@@ -16,17 +16,6 @@ function NavList() {
           Home
         </NavLink>
       </li>
-
-      <li>
-        <NavLink
-          to="/contact"
-          className={({ isActive }) =>
-            isActive ? "border-b-2 border-red-600" : ""
-          }
-        >
-          Contact
-        </NavLink>
-      </li>
       <li>
         <NavLink
           to="/about-us"
@@ -35,6 +24,16 @@ function NavList() {
           }
         >
           About
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          to="/contact"
+          className={({ isActive }) =>
+            isActive ? "border-b-2 border-red-600" : ""
+          }
+        >
+          Contact
         </NavLink>
       </li>
     </ul>
@@ -89,10 +88,9 @@ const Navigation = () => {
               onClick={Toggle}
               className="text-gray-800 absolute top-4 right-4"
             >
-              
               <X className="h-6 w-6" />
             </button>
-            <hr className="mt-8 border-1 border-gray-600 my-2"/>
+            <hr className="mt-8 border-1 border-gray-600 my-2" />
             <div className="flex flex-col space-y-4 mx-3">
               <NavList />
             </div>
