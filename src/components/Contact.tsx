@@ -9,16 +9,16 @@ const Contact = () => {
   return (
     <>
       <div
-        className="relative w-full h-[280px] lg:h-[460px] bg-cover bg-center  "
+        className="relative w-full h-[320px] lg:h-[460px] bg-cover bg-center  "
         style={{ backgroundImage: `url(${Man})` }}
       >
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="relative z-10 text-white ">
-          <div className="border-l-4 sm:border-l-6  lg:border-l-8 border-white absolute top-[190px] lg:top-[275px] left-8 lg:left-24 h-16 lg:h-32 ">  
+          <div className="border-l-4 sm:border-l-6  lg:border-l-8 border-white absolute top-[220px] lg:top-[275px] left-8 lg:left-24 h-16 lg:h-32 ">  
           </div>
           <div className="relative flex flex-col sm:flex-col lg:flex-row justify-between">
             <div>
-              <h1 className="text-2xl sm:text-3xl lg:text-5xl absolute top-48 lg:top-72 left-10 lg:left-28">Contact-Us</h1>
+              <h1 className="text-2xl sm:text-3xl lg:text-5xl absolute top-56 lg:top-72 left-10 lg:left-28">Contact-Us</h1>
             </div>
             <div className="absolute top-[200px] lg:top-[310px] lg:right-10 hidden lg:block">
               <p className="max-w-400px text-xs sm:text-sm lg:text-base">
@@ -36,9 +36,9 @@ const Contact = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col lg:flex-row sm:flex-col justify-between px-8 sm:px-14 lg:px-20 lg:mb-10">
-        <div className="w-[300px] lg:w-[500px] border">
-          <p className="mt-9">
+      <div className="flex flex-col lg:flex-row sm:flex-col justify-between px-4 sm:px-8 lg:px-20 lg:mb-10 items-center">
+        <div className="w-full lg:w-[500px] lg:mb-11 mt-4">
+          <p className="">
             We’d be delighted to host you at our office for a conversation. We
             look forward to welcoming you
           </p>
@@ -84,7 +84,7 @@ const Contact = () => {
             </p>
           </div>
         </div>
-        <div className="w-[300px] lg:w-[500px] mt-9 mb-4 ">
+        <div className="w-full lg:w-[500px] lg:mt-10 mb-4 mt-10">
           <form className="flex flex-col gap-4">
             <p>
               If you’d prefer not to use our contact form, feel free to send us
