@@ -18,10 +18,10 @@ const Details = [
 const Vision = () => {
   return (
     <>
-      <div className="bg-red-600 h-[500px] px-16">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+      <div className="bg-red-600 h-fit  lg:h-[500px] lg:px-16 ">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 px-4 sm:px-8 lg:px-20">
           {Details.map((item) => (
-            <div key={item.title} className="w-96 h-[450px] bg-white mt-6 p-8">
+            <div key={item.title} className="lg:w-96 lg:h-[450px] bg-white mt-6 p-8 mb-5">
               <h2 className="text-2xl font-bold">{item.title}</h2>
               <p className="mt-10">{item.content}</p>
             </div>

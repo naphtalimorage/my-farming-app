@@ -9,7 +9,7 @@ const Contact = () => {
   return (
     <>
       <div
-        className="relative w-full h-[320px] lg:h-[460px] bg-cover bg-center  "
+        className="relative w-full h-[320px] lg:h-[460px] bg-cover bg-center"
         style={{ backgroundImage: `url(${Man})` }}
       >
         <div className="absolute inset-0 bg-black opacity-50"></div>

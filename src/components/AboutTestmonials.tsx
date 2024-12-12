@@ -20,21 +20,23 @@ const Details = [
 const AboutTestmonials = () => {
   return (
     <>
-      <div className="bg-gray-500 h-[700px] py-10">
-        <h1 className="flex justify-center   text-4xl text-black ">
+      <div className="bg-gray-500 lg:h-[700px] py-6 lg:py-10">
+        <h1 className="flex justify-center text-3xl  lg:text-4xl text-black ">
           Testmonials
         </h1>
-        <p className="flex justify-center mt-5 text-lg text-black">
+        <p className="flex justify-center mt-2 lg:mt-5 text-base lg:text-lg text-black">
           this is what our customer say about our seeds{" "}
         </p>
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 px-40">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:px-40 ">
           {Details.map((item) => (
-            <div key={item.name} className="w-72 mt-14">
-              <div className="flex justify-center mb-8">
-                <Quote size={32} />
+            <div className="flex justify-center items-center">
+              <div key={item.name} className="w-60 lg:w-72 mt-8 lg:mt-14">
+                <div className="flex justify-center mb-8">
+                  <Quote size={32} />
+                </div>
+                <h1 className="flex justify-center">{item.name}</h1>
+                <p className="flex justify-center">{item.message}</p>
               </div>
-              <h1 className="flex justify-center">{item.name}</h1>
-              <p className="flex justify-center">{item.message}</p>
             </div>
           ))}
         </div>
