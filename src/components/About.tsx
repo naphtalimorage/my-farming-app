@@ -51,7 +51,7 @@ const About = () => {
           </p>
         </div>
         <div className="mt-10 mb-5 lg:mb-0 lg:mt-20">
-          <img src={Nappier} alt="" className="w-full lg:w-96 max-h-[500px] object-cover" />
+          <img src={Nappier} alt="" className="w-full lg:w-96 lg:h-[500px] object-cover" />
         </div>
       </div>
       <div>
