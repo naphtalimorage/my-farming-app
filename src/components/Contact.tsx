@@ -37,7 +37,7 @@ const Contact = () => {
         </div>
       </div>
       <div className="flex flex-col lg:flex-row sm:flex-col justify-between px-4 sm:px-8 lg:px-20 lg:mb-10 items-center">
-        <div className="w-full lg:w-[500px] lg:mb-11 mt-4">
+        <div className="w-full lg:w-[500px] lg:mb-20 mt-4">
           <p className="">
             We’d be delighted to host you at our office for a conversation. We
             look forward to welcoming you
