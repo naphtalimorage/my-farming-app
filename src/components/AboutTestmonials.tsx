@@ -30,12 +30,12 @@ const AboutTestmonials = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:px-40 ">
           {Details.map((item) => (
             <div key={item.name} className="flex justify-center items-center lg:items-start">
-              <div  className="w-60 lg:w-72 mt-8 lg:mt-14">
+              <div  className="px-8 lg:px-0 lg:w-72 mt-8 lg:mt-14 ">
                 <div className="flex justify-center mb-8">
                   <Quote size={32} />
                 </div>
                 <h1 className="flex justify-center text-base">{item.name}</h1>
-                <p className="flex justify-center">{item.message}</p>
+                <p className="flex justify-center w-full ">{item.message}</p>
               </div>
             </div>
           ))}
