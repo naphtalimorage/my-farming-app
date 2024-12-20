@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import CarouselPage from "./Carousel";
-import about1 from "../assets/download.jpeg";
+import image1 from "../assets/download3.jpeg";
 import about3 from "../assets/download1.jpeg";
 import { Button } from "./ui/button";
 import Testmonial from "./Testmonial";
@@ -56,7 +56,7 @@ const Home = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 lg:gap-8">
             <div
               className="relative h-40 w-full lg:h-[150px] lg:w-[250px] bg-cover bg-center "
-              style={{ backgroundImage: `url(${about1})` }}
+              style={{ backgroundImage: `url(${image1})` }}
             >
               <div className="absolute inset-0  bg-gradient-to-t from-black to-transparent via-black via-5% opacity-90"></div>
               <div className="relative z-10 ">
@@ -74,7 +74,7 @@ const Home = () => {
             </div>
             <div
               className="relative h-40 w-full lg:h-[150px] lg:w-[250px] bg-cover bg-center "
-              style={{ backgroundImage: `url(${about1})` }}
+              style={{ backgroundImage: `url(${image1})` }}
             >
               <div className="absolute inset-0  bg-gradient-to-t from-black to-transparent via-black via-5% opacity-90"></div>
               <div className="relative z-10 ">
@@ -92,7 +92,7 @@ const Home = () => {
             </div>
             <div
               className="relative h-40 w-full lg:h-[150px] lg:w-[250px] bg-cover bg-center "
-              style={{ backgroundImage: `url(${about1})` }}
+              style={{ backgroundImage: `url(${image1})` }}
             >
               <div className="absolute inset-0  bg-gradient-to-t from-black to-transparent via-black via-5% opacity-90"></div>
               <div className="relative z-10 ">
