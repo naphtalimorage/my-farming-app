@@ -14,11 +14,12 @@ const Contact = () => {
       >
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="relative z-10 text-white ">
-          <div className="border-l-4 sm:border-l-6  lg:border-l-8 border-white absolute top-[220px] lg:top-[275px] left-8 lg:left-24 h-16 lg:h-32 ">  
-          </div>
+          <div className="border-l-4 sm:border-l-6  lg:border-l-8 border-white absolute top-[220px] lg:top-[275px] left-8 lg:left-24 h-16 lg:h-32 "></div>
           <div className="relative flex flex-col sm:flex-col lg:flex-row justify-between">
             <div>
-              <h1 className="text-2xl sm:text-3xl lg:text-5xl absolute top-56 lg:top-72 left-10 lg:left-28">Contact-Us</h1>
+              <h1 className="text-2xl sm:text-3xl lg:text-5xl absolute top-56 lg:top-72 left-10 lg:left-28">
+                Contact-Us
+              </h1>
             </div>
             <div className="absolute top-[200px] lg:top-[310px] lg:right-10 hidden lg:block">
               <p className="max-w-400px text-xs sm:text-sm lg:text-base">
@@ -26,11 +27,16 @@ const Contact = () => {
                 <br /> where flexibility meets dedication.
               </p>
               <div className="flex flex-row lg:mt-5 ">
-                <Link to="/" className="text-sm lg:text-base text-gray-400 hover:text-gray-200">
+                <Link
+                  to="/"
+                  className="text-sm lg:text-base text-gray-400 hover:text-gray-200"
+                >
                   Home
                 </Link>
                 <div className="h-2 lg:h-4 mt-1 border-l-2 border-gray-400 mx-2"></div>
-                <h1 className="text-sm lg:text-base text-gray-300">Contact Us</h1>
+                <h1 className="text-sm lg:text-base text-gray-300">
+                  Contact Us
+                </h1>
               </div>
             </div>
           </div>
@@ -70,9 +76,9 @@ const Contact = () => {
           </div>
           <div className="flex flex-row mt-5">
             <Mail size={18} className="" />
-            <Link to="naphtalimorage56@gmail">
+            <Link to="farmtop953@gmail.com">
               <p className="ml-6 text-red-600 underline">
-                naphtalimorage56@gmail.com
+                farmtop953@gmail.com{" "}
               </p>
             </Link>
           </div>

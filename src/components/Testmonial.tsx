@@ -1,14 +1,15 @@
-import Nappier from "../assets/download1.jpeg";
-import Lucerne from "../assets/download.jpeg";
-import Hay from "../assets/download1.jpeg";
-import Desmodium from "../assets/download.jpeg";
+import Onions from "../assets/onions.jpeg";
+import Carrot from "../assets/carrot.jpeg";
+import Tomatoes from "../assets/nyanya.jpeg";
+import Potatoes from "../assets/potatoes.jpeg";
 import { Quote } from "lucide-react";
+
 
 const cardDetails = [
   {
     photo: (
       <img
-        src={Nappier}
+        src={Potatoes}
         alt="image1"
         className="rounded-full w-32 h-32 lg:w-44 lg:h-44 object-cover"
       />
@@ -20,7 +21,7 @@ const cardDetails = [
   {
     photo: (
       <img
-        src={Lucerne}
+        src={Tomatoes}
         alt="image2"
         className="rounded-full  w-32 h-32 lg:w-44 lg:h-44 object-cover"
       />
@@ -32,7 +33,7 @@ const cardDetails = [
   {
     photo: (
       <img
-        src={Hay}
+        src={Carrot}
         alt="image3"
         className="rounded-full w-32 h-32 lg:w-44 lg:h-44 object-cover"
       />
@@ -44,7 +45,7 @@ const cardDetails = [
   {
     photo: (
       <img
-        src={Desmodium}
+        src={Onions}
         alt="image4"
         className="rounded-full  w-32 h-32 lg:w-44 lg:h-44 object-cover"
       />

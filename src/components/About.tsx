@@ -1,4 +1,4 @@
-import Nappier from "../assets/download.jpeg";
+import Nappier from "../assets/manfarmer.jpeg";
 import Vision from "./Vision";
 import Desmodium from "../assets/download1.jpeg";
 import AboutTestmonials from "./AboutTestmonials";
@@ -51,7 +51,7 @@ const About = () => {
           </p>
         </div>
         <div className="mt-10 mb-5 lg:mb-0 lg:mt-20">
-          <img src={Nappier} alt="" className="w-full lg:w-96 lg:h-[500px] object-cover" />
+          <img src={Nappier} alt="" className="w-full lg:w-[400px] lg:h-[600px] object-cover" />
         </div>
       </div>
       <div>

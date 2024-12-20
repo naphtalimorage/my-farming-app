@@ -1,7 +1,12 @@
 import { Link } from "react-router-dom";
 import CarouselPage from "./Carousel";
-import image1 from "../assets/download3.jpeg";
-import about3 from "../assets/download1.jpeg";
+import ConeSilage from "../assets/cornsilage2.jpeg";
+import Nappier from "../assets/nappier1.jpeg";
+import about from "../assets/vegetables.jpeg";
+import YellowMaize from "../assets/yellowmaize.jpeg";
+import Hoho from "../assets/hoho.jpeg";
+import Hay from "../assets/haybale.jpeg";
+import Desmodium from "../assets/desmodium.jpeg";
 import { Button } from "./ui/button";
 import Testmonial from "./Testmonial";
 
@@ -13,7 +18,7 @@ const Home = () => {
       </div>
       <div className="flex flex-col gap-10 mt-16 lg:flex-row lg:gap-20 lg:mt-52 px-4 lg:px-0">
         <div>
-          <img src={about3} alt="" className="w-full lg:w-[600px] h-44 lg:h-80 object-cover" />
+          <img src={about} alt="" className="w-full lg:w-[600px] h-44 lg:h-80 object-cover" />
         </div>
         <div className="lg:w-[700px]">
           <h2 className="text-2xl mb-3 lg:mb-0 lg:text-4xl lg:mt-4">About TopFarm</h2>
@@ -56,7 +61,16 @@ const Home = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 lg:gap-8">
             <div
               className="relative h-40 w-full lg:h-[150px] lg:w-[250px] bg-cover bg-center "
-              style={{ backgroundImage: `url(${image1})` }}
+              style={{ backgroundImage: `url(${ConeSilage})` }}
+            >
+              <div className="absolute inset-0  bg-gradient-to-t from-black to-transparent via-black via-5% opacity-90"></div>
+              <div className="relative z-10 ">
+                <h1 className="text-red-600 text-xl  absolute top-28 left-6">CORN SILAGE</h1>
+              </div>
+            </div>
+            <div
+              className="relative h-40 w-full lg:h-[150px] lg:w-[250px] bg-cover bg-center"
+              style={{ backgroundImage: `url(${Desmodium})` }}
             >
               <div className="absolute inset-0  bg-gradient-to-t from-black to-transparent via-black via-5% opacity-90"></div>
               <div className="relative z-10 ">
@@ -65,7 +79,7 @@ const Home = () => {
             </div>
             <div
               className="relative h-40 w-full lg:h-[150px] lg:w-[250px] bg-cover bg-center "
-              style={{ backgroundImage: `url(${about3})` }}
+              style={{ backgroundImage: `url(${Hoho})` }}
             >
               <div className="absolute inset-0  bg-gradient-to-t from-black to-transparent via-black via-5% opacity-90"></div>
               <div className="relative z-10 ">
@@ -74,38 +88,29 @@ const Home = () => {
             </div>
             <div
               className="relative h-40 w-full lg:h-[150px] lg:w-[250px] bg-cover bg-center "
-              style={{ backgroundImage: `url(${image1})` }}
+              style={{ backgroundImage: `url(${YellowMaize})` }}
             >
               <div className="absolute inset-0  bg-gradient-to-t from-black to-transparent via-black via-5% opacity-90"></div>
               <div className="relative z-10 ">
-                <h1 className="text-red-600 text-xl  absolute top-28 left-6">DESMODIUM</h1>
+                <h1 className="text-red-600 text-xl  absolute top-28 left-6">YELLOW MAIZE</h1>
               </div>
             </div>
             <div
               className="relative h-40 w-full lg:h-[150px] lg:w-[250px] bg-cover bg-center "
-              style={{ backgroundImage: `url(${about3})` }}
+              style={{ backgroundImage: `url(${Nappier})` }}
             >
               <div className="absolute inset-0  bg-gradient-to-t from-black to-transparent via-black via-5% opacity-90"></div>
               <div className="relative z-10 ">
-                <h1 className="text-red-600 text-xl  absolute top-28 left-6">DESMODIUM</h1>
+                <h1 className="text-red-600 text-xl  absolute top-28 left-6">NAPPIER</h1>
               </div>
             </div>
             <div
               className="relative h-40 w-full lg:h-[150px] lg:w-[250px] bg-cover bg-center "
-              style={{ backgroundImage: `url(${image1})` }}
+              style={{ backgroundImage: `url(${Hay})` }}
             >
               <div className="absolute inset-0  bg-gradient-to-t from-black to-transparent via-black via-5% opacity-90"></div>
               <div className="relative z-10 ">
-                <h1 className="text-red-600 text-xl  absolute top-28 left-6">DESMODIUM</h1>
-              </div>
-            </div>
-            <div
-              className="relative h-40 w-full lg:h-[150px] lg:w-[250px] bg-cover bg-center "
-              style={{ backgroundImage: `url(${about3})` }}
-            >
-              <div className="absolute inset-0  bg-gradient-to-t from-black to-transparent via-black via-5% opacity-90"></div>
-              <div className="relative z-10 ">
-                <h1 className="text-red-600 text-xl  absolute top-28 left-6">DESMODIUM</h1>
+                <h1 className="text-red-600 text-xl  absolute top-28 left-6">HAY</h1>
               </div>
             </div>
             
