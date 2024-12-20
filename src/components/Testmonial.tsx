@@ -69,10 +69,10 @@ const Testmonial = () => {
         <div className="flex flex-col gap-5 lg:flex-row lg:gap-6 lg:justify-center  mt-10">
           {cardDetails &&
             cardDetails.map((details) => (
-              <div className="flex justify-center sm:items-center lg:items-start">
+              <div className="flex justify-center sm:items-center lg:items-start ">
                 <div
                   key={details.name}
-                  className=" w-[280px] max-w-72 px-6 lg:px-8 relative"
+                  className=" w-full max-w-72 lg:px-8 relative"
                 >
                   <div className="w-14 h-14 bg-red-600 rounded-full flex items-center justify-center absolute top-24 right-16 lg:top-36 lg:right-16 ">
                     <Quote size={20} color="white" />
