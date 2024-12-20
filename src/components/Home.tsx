@@ -60,57 +60,57 @@ const Home = () => {
         <div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 lg:gap-8">
             <div
-              className="relative h-40 w-full lg:h-[150px] lg:w-[250px] bg-cover bg-center "
+              className="relative h-60 w-full lg:h-[150px] lg:w-[250px] bg-cover bg-center "
               style={{ backgroundImage: `url(${ConeSilage})` }}
             >
               <div className="absolute inset-0  bg-gradient-to-t from-black to-transparent via-black via-5% opacity-90"></div>
               <div className="relative z-10 ">
-                <h1 className="text-red-600 text-xl  absolute top-28 left-6">CORN SILAGE</h1>
+                <h1 className="text-red-600 text-xl lg:text-base  absolute top-44 left-6 lg:top-28">CORN SILAGE</h1>
               </div>
             </div>
             <div
-              className="relative h-40 w-full lg:h-[150px] lg:w-[250px] bg-cover bg-center"
+              className="relative h-60 w-full lg:h-[150px] lg:w-[250px] bg-cover bg-center"
               style={{ backgroundImage: `url(${Desmodium})` }}
             >
               <div className="absolute inset-0  bg-gradient-to-t from-black to-transparent via-black via-5% opacity-90"></div>
               <div className="relative z-10 ">
-                <h1 className="text-red-600 text-xl  absolute top-28 left-6">DESMODIUM</h1>
+                <h1 className="text-red-600 text-xl lg:text-base absolute top-44 left-6 lg:top-28">DESMODIUM</h1>
               </div>
             </div>
             <div
-              className="relative h-40 w-full lg:h-[150px] lg:w-[250px] bg-cover bg-center "
+              className="relative h-60 w-full lg:h-[150px] lg:w-[250px] bg-cover bg-center "
               style={{ backgroundImage: `url(${Hoho})` }}
             >
               <div className="absolute inset-0  bg-gradient-to-t from-black to-transparent via-black via-5% opacity-90"></div>
               <div className="relative z-10 ">
-                <h1 className="text-red-600 text-xl  absolute top-28 left-6">DESMODIUM</h1>
+                <h1 className="text-red-600 text-xl lg:text-base absolute top-44 left-6 lg:top-28">DESMODIUM</h1>
               </div>
             </div>
             <div
-              className="relative h-40 w-full lg:h-[150px] lg:w-[250px] bg-cover bg-center "
+              className="relative h-60 w-full lg:h-[150px] lg:w-[250px] bg-cover bg-center "
               style={{ backgroundImage: `url(${YellowMaize})` }}
             >
               <div className="absolute inset-0  bg-gradient-to-t from-black to-transparent via-black via-5% opacity-90"></div>
               <div className="relative z-10 ">
-                <h1 className="text-red-600 text-xl  absolute top-28 left-6">YELLOW MAIZE</h1>
+                <h1 className="text-red-600 text-xl lg:text-base  absolute top-44 left-6 lg:top-28">YELLOW MAIZE</h1>
               </div>
             </div>
             <div
-              className="relative h-40 w-full lg:h-[150px] lg:w-[250px] bg-cover bg-center "
+              className="relative h-60 w-full lg:h-[150px] lg:w-[250px] bg-cover bg-center "
               style={{ backgroundImage: `url(${Nappier})` }}
             >
               <div className="absolute inset-0  bg-gradient-to-t from-black to-transparent via-black via-5% opacity-90"></div>
               <div className="relative z-10 ">
-                <h1 className="text-red-600 text-xl  absolute top-28 left-6">NAPPIER</h1>
+                <h1 className="text-red-600 text-xl lg:text-base absolute top-44 left-6 lg:top-28">NAPPIER</h1>
               </div>
             </div>
             <div
-              className="relative h-40 w-full lg:h-[150px] lg:w-[250px] bg-cover bg-center "
+              className="relative h-60 w-full lg:h-[150px] lg:w-[250px] bg-cover bg-center "
               style={{ backgroundImage: `url(${Hay})` }}
             >
               <div className="absolute inset-0  bg-gradient-to-t from-black to-transparent via-black via-5% opacity-90"></div>
               <div className="relative z-10 ">
-                <h1 className="text-red-600 text-xl  absolute top-28 left-6">HAY</h1>
+                <h1 className="text-red-600 text-xl lg:text-base absolute top-44 left-6 lg:top-28">HAY</h1>
               </div>
             </div>
             
