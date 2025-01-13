@@ -1,8 +1,15 @@
 import { NavLink } from "react-router-dom";
 import Logo from "../assets/TopFarm.png";
-import { useState } from "react";
-import { Menu, X } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
+import {
+  Sheet,
+  SheetContent,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
+import { Menu} from "lucide-react";
 function NavList() {
   return (
     <ul className="py-2 flex flex-col gap-3 lg:flex-row lg:gap-6 lg:py-4">
@@ -41,11 +48,6 @@ function NavList() {
 }
 
 const Navigation = () => {
-  const [openNav, setOpenNav] = useState(false);
-
-  const Toggle = () => {
-    setOpenNav(!openNav);
-  };
   return (
     <>
       <nav className="fixed bg-white top-0 z-40 w-full border">
@@ -66,37 +68,23 @@ const Navigation = () => {
               <NavList />
             </div>
             <div className="block lg:hidden">
-              <button
-                onClick={Toggle}
-                className="text-gray-800 focus:outline-none"
-              >
-                {openNav ? (
-                  <X className="h-6 w-6" />
-                ) : (
-                  <Menu className="h-6 w-6" />
-                )}
-              </button>
+              <Sheet>
+                <SheetTrigger asChild>
+                  <Button variant="outline">
+                    <Menu size={20} />
+                  </Button>
+                </SheetTrigger>
+                <SheetContent>
+                  <SheetHeader>
+                    <SheetTitle>Edit profile</SheetTitle>
+                  </SheetHeader>
+                  <NavList/>
+                </SheetContent>
+              </Sheet>{" "}
             </div>
           </div>
         </div>
       </nav>
-
-      {openNav && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 z-50 ">
-          <div className="bg-white p-3 shadow-lg ml-40 h-screen">
-            <button
-              onClick={Toggle}
-              className="text-gray-800 absolute top-4 right-4"
-            >
-              <X className="h-6 w-6" />
-            </button>
-            <hr className="mt-8 border-1 border-gray-600 my-2" />
-            <div className="flex flex-col space-y-4 mx-3">
-              <NavList />
-            </div>
-          </div>
-        </div>
-      )}
     </>
   );
 };
