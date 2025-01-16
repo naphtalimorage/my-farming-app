@@ -3,9 +3,14 @@ import { Phone } from "lucide-react";
 import { Mail } from "lucide-react";
 import { Clock } from "lucide-react";
 import { Link } from "react-router-dom";
-import { Button } from "./ui/button";
+import emailjs from 'emailjs-com';
 import Man from "../assets/Man.jpeg";
 const Contact = () => {
+
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => { 
+    e.preventDefault();
+    const form = e.target as HTMLFormElement;
+    emailjs.sendForm('service_fjcg6al', 'template_apf3wcs', form, '73quFXqH1ORfAlg9E') .then((result) => { console.log(result.text); }, (error) => { console.log(error.text); }); };
   return (
     <>
       <div
@@ -91,7 +96,7 @@ const Contact = () => {
           </div>
         </div>
         <div className="w-full lg:w-[500px] lg:mt-10 mb-4 mt-10">
-          <form className="flex flex-col gap-4">
+          <form className="flex flex-col gap-4" onSubmit={sendEmail}>
             <p>
               If you’d prefer not to use our contact form, feel free to send us
               an email directly or give us a call. We’d love to hear from you!
@@ -119,18 +124,18 @@ const Contact = () => {
             />
             <label htmlFor="text">Message</label>
             <textarea
-              name="textare"
+              name="text"
               id="text"
               rows={5}
               className="border w-full rounded-sm px-2 py-2"
               placeholder=" Write your message here..."
             ></textarea>
-            <Button
+            <button
               type="submit"
-              className="px-10 py-6 bg-red-600  hover:bg-red-500 text-base"
+              className="px-10 py-6 bg-red-600 hover:bg-red-500 text-base"
             >
               Send Message
-            </Button>
+            </button>
           </form>
         </div>
       </div>
