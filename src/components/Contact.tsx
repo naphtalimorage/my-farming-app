@@ -3,14 +3,57 @@ import { Phone } from "lucide-react";
 import { Mail } from "lucide-react";
 import { Clock } from "lucide-react";
 import { Link } from "react-router-dom";
-import emailjs from 'emailjs-com';
+import emailjs from "emailjs-com";
 import Man from "../assets/Man.jpeg";
-const Contact = () => {
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm } from "react-hook-form";
+import { z } from "zod";
+import { Button } from "@/components/ui/button";
+import {
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from "@/components/ui/form";
+import { Input } from "./ui/input";
+import { Textarea } from "./ui/textarea";
 
-  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => { 
-    e.preventDefault();
-    const form = e.target as HTMLFormElement;
-    emailjs.sendForm('service_fjcg6al', 'template_apf3wcs', form, '73quFXqH1ORfAlg9E') .then((result) => { console.log(result.text); }, (error) => { console.log(error.text); }); };
+const formSchema = z.object({
+  fullName: z.string().min(2, {
+    message: "Username must be at least 2 characters.",
+  }),
+  email: z.string().min(1, { message: "email is required" }).email({
+    message: "Please enter a valid email address.",
+  }),
+  message: z.string().min(2, {
+    message: "Your message is required",
+  }),
+});
+const Contact = () => {
+  const form = useForm<z.infer<typeof formSchema>>({
+    resolver: zodResolver(formSchema),
+    defaultValues: {
+      fullName: "",
+      email: "",
+      message: "",
+    },
+  });
+
+  function onSubmit(values: z.infer<typeof formSchema>) {
+    emailjs
+      .send("service_fjcg6al", "template_apf3wcs", values, "73quFXqH1ORfAlg9E")
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  }
+
   return (
     <>
       <div
@@ -81,11 +124,11 @@ const Contact = () => {
           </div>
           <div className="flex flex-row mt-5">
             <Mail size={18} className="" />
-            <Link to="farmtop953@gmail.com">
+            <a href="mailto:farmtop953@gmail.com">
               <p className="ml-6 text-red-600 underline">
                 farmtop953@gmail.com{" "}
               </p>
-            </Link>
+            </a>
           </div>
           <div className="flex flex-row mt-5">
             <Clock size={18} className="" />
@@ -96,47 +139,63 @@ const Contact = () => {
           </div>
         </div>
         <div className="w-full lg:w-[500px] lg:mt-10 mb-4 mt-10">
-          <form className="flex flex-col gap-4" onSubmit={sendEmail}>
-            <p>
-              If you’d prefer not to use our contact form, feel free to send us
-              an email directly or give us a call. We’d love to hear from you!
-              Here’s our direct email and phone number.
-            </p>
-            <label htmlFor="name" className="">
-              Name
-            </label>
-            <input
-              id="name"
-              name="name"
-              type="text"
-              placeholder="Enter your name"
-              className="border w-full py-2 rounded-sm px-2 "
-            />
-            <label htmlFor="email" className="m-0">
-              E-mail
-            </label>
-            <input
-              id="email"
-              name="email"
-              type="email"
-              placeholder="Enter your email"
-              className="border w-full py-2 rounded-sm px-2"
-            />
-            <label htmlFor="text">Message</label>
-            <textarea
-              name="text"
-              id="text"
-              rows={5}
-              className="border w-full rounded-sm px-2 py-2"
-              placeholder=" Write your message here..."
-            ></textarea>
-            <button
-              type="submit"
-              className="px-10 py-6 bg-red-600 hover:bg-red-500 text-base"
-            >
-              Send Message
-            </button>
-          </form>
+          <Form {...form}>
+            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+              <p>
+                If you’d prefer not to use our contact form, feel free to send
+                us an email directly or give us a call. We’d love to hear from
+                you! Here’s our direct email and phone number.
+              </p>
+              <FormField
+                control={form.control}
+                name="fullName"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>Full Name</FormLabel>
+                    <FormControl>
+                      <Input placeholder="full name" {...field} />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+              <FormField
+                control={form.control}
+                name="email"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>E-mail</FormLabel>
+                    <FormControl>
+                      <Input placeholder="email" {...field} />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+              <FormField
+                control={form.control}
+                name="message"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormLabel>Message</FormLabel>
+                    <FormControl>
+                      <Textarea
+                        placeholder="Type your message here..."
+                        {...field}
+                      />
+                    </FormControl>
+                    <FormMessage />
+                  </FormItem>
+                )}
+              />
+              <Button
+                type="submit"
+                className="px-10 py-6 w-full bg-red-600 hover:bg-red-500 text-base"
+              >
+                Send Message
+              </Button>
+            </form>
+          </Form>
         </div>
       </div>
     </>
