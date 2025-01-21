@@ -40,8 +40,12 @@ export default function FooterWithSocialLinks() {
               <div className="flex flex-row max-w-[180px] bg-white mt-2 sm:mt-6 lg:mt-8">
                 <img src={Logo} alt="" className="w-16 object-cover" />
                 <div className="flex flex-col  ">
-                  <h1 className="text-[16px]  lg:text-[25px] font-semibold text-green-700">TopFarm</h1>
-                  <p className="flex justify-center text-xs text-green-700">Seed Company</p>
+                  <h1 className="text-[16px]  lg:text-[25px] font-semibold text-green-700">
+                    TopFarm
+                  </h1>
+                  <p className="flex justify-center text-xs text-green-700">
+                    Seed Company
+                  </p>
                 </div>
               </div>
               <div className="mt-2 sm:mt-6 lg:mt-8">
@@ -126,14 +130,31 @@ export default function FooterWithSocialLinks() {
                   <h1 className="mt-2 lg:mt-4 text-base lg:text-lg font-medium  text-white ">
                     {title}
                   </h1>
-                  {items.map((link) => (
+                  {items.map((link, index) => (
                     <li key={link}>
-                      <h1
-                        color="white"
-                        className="lg:py-1.5  text-sm lg:text-base font-normal transition-colors text-white hover:underline"
+                      <Link
+                        to={
+                          [
+                            "/about-us",
+                            "/careers",
+                            "/press",
+                            "/news",
+                            "/blog",
+                            "/newsletter",
+                            "/events",
+                            "/help-center",
+                            "/tel1",
+                            "/tel2",
+                            "/tel3",
+                            "/tel4",
+                            "/whatsapp",
+                          ][index]
+                        }
+                        
                       >
+                      
                         {link}
-                      </h1>
+                      </Link>
                     </li>
                   ))}
                 </ul>
