@@ -4,17 +4,17 @@ const Details = [
   {
     name: "Peter- Farmer ",
     message:
-      "Royal Seed delivered an exceptional experience from start to finish! The ordering process was seamless, with a diverse selection of high-quality seeds. The carefully packaged seeds yielded a bumper harvest, showcasing their excellent germination rates and plant vigor. What truly stood out was their outstanding customer service – knowledgeable and responsive. I highly recommend Royal Seed for top-notch products and exceptional support. Thank you for making my gardening journey a success!",
+      "TopFarm delivered an exceptional experience from start to finish! The ordering process was seamless, with a diverse selection of high-quality seeds. The carefully packaged seeds yielded a bumper harvest, showcasing their excellent germination rates and plant vigor. What truly stood out was their outstanding customer service – knowledgeable and responsive. I highly recommend TopFarm for top-notch products and exceptional support. Thank you for making my gardening journey a success!",
   },
   {
     name: "Brenda- Farmer",
     message:
-      "Good morning Royal Seed, am a very satisfied farmer.Have been doing your products for the last 3 years.The quality of products is unmatched especially the Red Pinoy.Good job.Keep up.",
+      "Good morning TopFarm, am a very satisfied farmer.Have been doing your products for the last 3 years.The quality of products is unmatched especially the Red Pinoy.Good job.Keep up.",
   },
   {
     name: "JKalenko Farmer",
     message:
-      "I'm a farmer based in makueni and I have been buying healthy and quality vegetable seedlings from royal seed and they have given me returns I've never experienced before.Keep it up Royal seed👌",
+      "I'm a farmer based in makueni and I have been buying healthy and quality vegetable seedlings from TopFarm and they have given me returns I've never experienced before.Keep it up TopFarm👌",
   },
 ];
 const AboutTestmonials = () => {
