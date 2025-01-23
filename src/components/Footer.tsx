@@ -2,24 +2,41 @@ import { Link } from "react-router-dom";
 import Logo from "../assets/TopFarm.png";
 import Vagetables from "../assets/download1.jpeg";
 
-const LINKS = [
+interface itemsType {
+  href: string;
+  tittleName: string;
+}
+
+interface LinkType {
+  title: string;
+  items: itemsType[];
+}
+
+const LINKS: LinkType[] = [
   {
     title: "Company",
-    items: ["About us", "Careers", "Press", "News"],
+    items: [
+      {href: "/about-us", tittleName: "About-us"}, 
+      {href:"/careers", tittleName: "Careers"}, 
+      {href:"/press", tittleName: "Press"}, 
+      {href:"/news",tittleName: "News"}, ],
   },
   {
     title: "Resource",
-    items: ["Blog", "Newsletter", "Events", "Help center"],
+    items: [
+      {href: "/blog", tittleName: "Blog"}, 
+      {href:"/newsletter", tittleName: "Newsletter"}, 
+      {href:"/events", tittleName: "Events"}, 
+      {href:"/helpcenter",tittleName: "Help center"},
+    ],
   },
   {
     title: "TEL",
     items: [
-      "+254 725 549 994",
-      "+254 725 549 995",
-      "+254 725 549 996",
-      "+254 725 549 997",
-      "WhatsApp No:",
-      "+254 780 884 087",
+      {href: "", tittleName: "+254 725 549 994"}, 
+      {href:"", tittleName: "+254 725 549 995"}, 
+      {href:"", tittleName: "+254 725 549 996"}, 
+      {href:"",tittleName: "+254 725 549 997"},
     ],
   },
 ];
@@ -27,6 +44,7 @@ const LINKS = [
 const currentYear = new Date().getFullYear();
 
 export default function FooterWithSocialLinks() {
+
   return (
     <footer
       className="relative w-full max-h-fit bg-cover bg-center bg-fixed"
@@ -130,30 +148,13 @@ export default function FooterWithSocialLinks() {
                   <h1 className="mt-2 lg:mt-4 text-base lg:text-lg font-medium  text-white ">
                     {title}
                   </h1>
-                  {items.map((link, index) => (
-                    <li key={link}>
+                  {items.map((item) => (
+                    <li key={item.tittleName}>
                       <Link
-                        to={
-                          [
-                            "/about-us",
-                            "/careers",
-                            "/press",
-                            "/news",
-                            "/blog",
-                            "/newsletter",
-                            "/events",
-                            "/help-center",
-                            "/tel1",
-                            "/tel2",
-                            "/tel3",
-                            "/tel4",
-                            "/whatsapp",
-                          ][index]
-                        }
-                        
-                      >
-                      
-                        {link}
+                        to={item.href}
+                        className="lg:py-1.5  text-sm lg:text-base font-normal transition-colors text-white hover:underline"                      
+                      >                   
+                        {item.tittleName}
                       </Link>
                     </li>
                   ))}
