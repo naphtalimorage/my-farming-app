@@ -52,7 +52,7 @@ const cardDetails = [
     ),
     name: "Royal 705 F1 - Farmer",
     message:
-      "Mbegu za Nyanya za Royal 705 F1 kutoka Royal Seed ziliboresha sana bustani yangu ya nyanya. Rangi yenye kuvutia, ladha nzito, na upinzani dhidi ya magonjwa hufanya ziwe lazima kwa mpenzi yeyote wa nyanya. Royal Seed hutoa ubora kila wakati",
+      "Mbegu za Nyanya za TopFarm ziliboresha sana bustani yangu ya nyanya. Rangi yenye kuvutia, ladha nzito, na upinzani dhidi ya magonjwa hufanya ziwe lazima kwa mpenzi yeyote wa nyanya. Royal Seed hutoa ubora kila wakati",
   },
 ];
 
