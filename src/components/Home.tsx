@@ -32,7 +32,7 @@ const Home = () => {
             present without compromising the ability of future generations to
             continue farming.
           </p>
-          <Link to="/about"> 
+          <Link to="/about-us"> 
             <Button className="mt-4 lg:mt-12 lg:px-10 lg:py-6 bg-red-600 hover:bg-red-500 hover:underline lg:text-base">
               Learn More   
             </Button>
