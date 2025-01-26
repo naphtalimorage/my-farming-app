@@ -44,7 +44,7 @@ const LINKS: LinkType[] = [
 const currentYear = new Date().getFullYear();
 
 export default function FooterWithSocialLinks() {
-
+  
   return (
     <footer
       className="relative w-full max-h-fit bg-cover bg-center bg-fixed"
